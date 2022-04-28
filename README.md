@@ -181,7 +181,13 @@
 
 6. check the changed files before commit
 
-- Do NOT include `config.env`
+   ```markdown
+    - Do NOT include `config.env`
+   ```
+
+7. new `example.config`
+
+- could figure it out how to set up the env
 
 ---
 
