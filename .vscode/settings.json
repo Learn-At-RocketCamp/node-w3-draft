@@ -37,4 +37,7 @@
             //other styling properties goes here ... 
         }
     ],
+    "cSpell.enableFiletypes": [
+        "!text"
+    ],
 }
