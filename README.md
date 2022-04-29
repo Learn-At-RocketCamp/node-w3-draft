@@ -206,3 +206,16 @@
    ```
 
 ---
+
+## #Step4-`<models>`
+
+- `postModel.js`
+
+- `PostSchema`
+
+   ```markdown
+    - required
+      - name
+      - content
+      - tags
+   ```

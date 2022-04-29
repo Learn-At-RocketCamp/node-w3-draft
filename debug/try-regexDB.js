@@ -1,3 +1,7 @@
+/**
+ * #HACK: no urgent
+ */
+
 const DB_URL = `mongodb+srv://<user>:<password>@clusterw0.ox68q.mongodb.net/<name>`;
 const DB_USERNAME = 'aaa';
 const DB_PASSWORD = 'bb';
