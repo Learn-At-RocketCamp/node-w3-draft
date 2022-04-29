@@ -10,8 +10,6 @@ const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const cors = require('cors');
 console.log('This is [app.js].');
 
@@ -30,8 +28,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // #Step3-router
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', require('./routes/index'));
+app.use('/posts', require('./routes/posts'));
+// const indexRouter = require('./routes/index');
+// const usersRouter = require('./routes/users');
+// app.use('/users', usersRouter);
 /**
  * POST method route
  *

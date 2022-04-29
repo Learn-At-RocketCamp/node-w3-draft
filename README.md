@@ -1,5 +1,12 @@
 # node-w3-draft
 
+## 【#TODO】
+
+- [ ] DELETE
+- [ ] UPDATE
+
+---
+
 ## issues
 
 - `Terminal`
@@ -219,3 +226,53 @@
       - content
       - tags
    ```
+
+---
+
+## #Step5-`RESTful.API`
+
+### `GET`
+
+1. `<routes>` / `posts.js` / require Model to find()
+
+2. `<app.js>` / use require router
+
+3. run and try
+
+   ```sh
+    http://127.0.0.1:3005/posts
+   ```
+
+---
+
+### `POST`X`<controllers>`
+
+1. new `postsController.js` / require Model to create() / try-catch / export
+
+2. `<routes>` / CHANGE to require `postsController.js` / as callback fn
+
+3. try `Postman`
+
+   ```sh
+    http://127.0.0.1:3005/posts
+   ```
+
+   ```sh
+    - Body / raw / JSON    
+   ```
+
+   ```JSON
+    {
+      "name": "guest", 
+      "content": "Hello!", 
+      "tags": "test"
+    }
+   ```
+
+4. get data again to check
+
+---
+
+### `DELETE`
+
+- #TODO:
